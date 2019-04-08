@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,400i,600" rel="stylesheet">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css" >
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="header-logo">
+            <img class="logo-image" src="images/udacity_logo.png" alt="udacity logo">
+        </div>
+        <div class="header-title">
+              <h1 class="portfolio-name">Mayuri Bhise</h1>
+              <p class="portfolio-desc">Front end Web Developer</p>
+        </div>
+      </header>
+
+      <main>
+          <img class="responsive-hero" src="images/hero-image.jpg" alt="Web Developer Image" >
+          <h2 class="section-heading">Featured Work</h2>
+          <section class="featured-work">
+            <article class="my-work">
+              <picture class="featured-images">
+                <img class ="project-image"
+                    srcset="images/new-image-iphone.png 280w,
+                              images/new-image-ipad.png 228w,
+                              images/new-image-desktop.png 345w"
+                    sizes ="(max-width:380px) 260px,
+                            (max-width:800px) 220px,
+                            300px"
+                    src="images/new-image-desktop.png"
+                    alt="Project 1">
+              </picture>
+              <h2 class="image-caption">Responsive Web Page</h2>
+            </article>
+            <article class="my-work">
+              <picture class="featured-images">
+                <img class ="project-image"
+                    srcset="images/project2-iphone.jpg 280w,
+                              images/project2-ipad.jpg 228w,
+                              images/project2-desktop.jpg 345w"
+                    sizes ="(max-width:380px) 260px,
+                            (max-width:800px) 220px,
+                            300px"
+                    src="images/project2-desktop.png"
+                    alt="Project 2">
+              </picture>
+              <h2 class="image-caption">Coming Soon</h2>
+            </article>
+            <article class="my-work">
+              <picture class="featured-images">
+                <img class ="project-image"
+                     srcset="images/project2-iphone.jpg 280w,
+                              images/project2-ipad.jpg 228w,
+                              images/project2-desktop.jpg 345w"
+                    sizes ="(max-width:380px) 260px,
+                            (max-width:800px) 220px,
+                            300px"
+                    src="images/project2-desktop.png"
+                    alt="Project 3">
+              </picture>
+              <h2 class="image-caption">Coming Soon</h2>
+            </article>
+        </section>
+        <div class="bio section-heading">
+          <h4 class="profile">About Me</h4>
+          <p class="bio-info">Amateur web programmer aiming to be a Ninja</p>
+        </div>
+        <p>
+<a href="http://jigsaw.w3.org/css-validator/check/referer">
+    <img style="border:0;width:88px;height:31px"
+        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+        alt="Valid CSS!" />
+    </a>
+</p>
+    </main>
+  </div>
+  </body>
+</html>
