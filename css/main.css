@@ -1,3 +1,4 @@
+/* CSS Reset */
 *{
   margin: 0;
   padding: 0;
@@ -9,10 +10,7 @@
   font-family: 'Fira Sans', sans-serif;
 }
 
-body {
-  font-size: 100%;
-}
-
+/* Major heading */
 .header {
   display: flex;
   flex-wrap: wrap;
@@ -45,40 +43,38 @@ body {
   text-align: center;
 }
 
-h1.portfolio-name {
+.portfolio-name {
   box-sizing: content-box;
   color: #2d3c49;
-  font-size: 2.5em;
+  font-size: 25px;
   text-align: right;
   padding-right: 10px;
 }
 
 .portfolio-desc {
-  font-size: 1em;
+  font-size: 20px;
   text-align: right;
   padding-right: 10px;
 }
 
+/* Hero Image */
 .responsive-hero {
   width: 100%;
   max-width: 100%;
   height: auto;
 }
 
-.side-image {
-  max-width: 100%;
-  height: auto;
-  padding: 20px;
-}
-
+/* Second Section Heading */
 .section-heading {
   color: #7d97ad;
   font-size: 1.5em;
   height: 1.5em;
   padding: 0.5em;
   text-align: center;
+  flex-basis: 100%;
 }
 
+/* Flexbox for featured projects */
 .featured-work {
   display: flex;
   flex-wrap: wrap;
@@ -92,12 +88,14 @@ h1.portfolio-name {
 .image-caption {
   text-align: center;
   color: #B22222;
+  font-size: 14px;
 }
 
 .project-image {
     padding-top: 20px;
 }
 
+/* About me */
 .bio {
   font-size: 90%;
   color: #2d3c49;
@@ -106,13 +104,10 @@ h1.portfolio-name {
 }
 
 .bio-info {
+  padding-top: 10px;
   color: #696969;
-  font-size: 55%;
+  font-size: 85%;
   text-align: justify;
-}
-
-.bio.section-heading {
-  margin-bottom: 150px;
 }
 
 .profile {
@@ -124,41 +119,45 @@ h1.portfolio-name {
 /* For extra small devices */
 @media only screen and (max-width:600px) {
 
-  h1.portfolio-name {
-    font-size: 2em;
+  .portfolio-name {
+    font-size: 20px;
     font-weight: normal;
+  }
+
+  .portfolio-desc {
+    font-size: 15px;
   }
 }
 
 /*small devices (600px and up)*/
 @media only screen and (min-width:600px) {
 
-  header.header {
+  .header {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
   }
 
-  div.header-logo {
+  .header-logo {
     height: 120px;
     width: 120px;
   }
 
-  img.logo-image {
+  .logo-image {
     width: 55px;
     height: 55px;
   }
 
-  h2.section-heading {
+  .section-heading {
     font-size: 2em;
   }
 
-  h2.image-caption {
+  .image-caption {
     font-size: 120%;
     padding-top: 10px;
   }
 
-  div.bio {
+  .bio {
     font-size: 2em;
   }
 }
@@ -167,34 +166,45 @@ h1.portfolio-name {
 devices over 768px*/
 @media only screen and (min-width: 768px) {
 
-  h4.profile {
-    font-size: 100%;
+  .profile {
+    font-size: 20px;
   }
 
-  img.logo-image {
+  .logo-image {
     width: 60px;
     height: 60px;
   }
 
+  .bio-info {
+    font-size: 18px;
+  }
 }
 
 /* For Laptops and devices over 992px */
 @media only screen and (min-width: 992px) {
 
-  h2.section-heading {
+  .section-heading {
     font-size: 3em;
   }
 
-  img.logo-image {
+  .logo-image {
     width: 80px;
     height: 80px;
+  }
+
+  .profile {
+    font-size: 22px;
+  }
+
+  .bio-info {
+    font-size: 20px;
   }
 }
 
 /* For Larger Screens like TVs*/
 @media only screen and (min-width: 2000px) {
 
-  section.featured-work {
+  .featured-work {
     width: 100%;
     justify-content: space-around;
   }
@@ -204,28 +214,28 @@ devices over 768px*/
     height: auto;
   }
 
-  header.header {
+  .header {
     height: 300px;
   }
 
-  img.logo-image {
+  .logo-image {
     width: 80px;
     height: 80px;
   }
 
-  div.bio {
+  .bio {
     font-size: 4em;
   }
 
-  h1.portfolio-name {
+  .portfolio-name {
     font-size: 4em;
   }
 
-  p.portfolio-desc {
+  .portfolio-desc {
     font-size: 3em;
   }
 
-  img.logo-image {
+  .logo-image {
     height: 100px;
     width: 100px;
   }
