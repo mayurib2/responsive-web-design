@@ -107,7 +107,8 @@ h1.portfolio-name {
 
 .bio-info {
   color: #696969;
-  font-size: 85%;
+  font-size: 55%;
+  text-align: justify;
 }
 
 .bio.section-heading {
